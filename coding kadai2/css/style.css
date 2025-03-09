@@ -1,0 +1,253 @@
+/* ページ全体のリセットや基本設定 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN", "Noto Sans JP", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.7;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+/* コンテナ設定（中央寄せ・背景・幅など） */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-left: 3px solid rgba(255, 255, 0, 0.3);
+  border-right: 3px solid rgba(255, 255, 0, 0.3);
+}
+
+/* 見出しデザイン */
+h1, h2, h3 {
+  margin: 1.2em 0 0.5em 0;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+/* ボタン風スタイル */
+.button {
+  display: inline-block;
+  background-color: #86d589; 
+  color: #fff;
+  padding: 20px 50px;
+  border-radius: 5px;
+  margin: 0.5em 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+/* センター寄せのユーティリティクラス */
+.center {
+  text-align: center;
+  margin: 1.5em 0;
+  font-size: 1.2em;
+}
+
+.center_button {
+  text-align: center;
+  border-radius: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+.no-bullets {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+
+
+/* 箇条書きや区切り */
+ul {
+  margin: 0.5em 0 1em 1.2em;
+  padding: 0;
+}
+li {
+  margin: 0.3em 0;
+}
+
+/* 画像に共通のスタイルを与える */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
+
+/* 太字や強調 */
+.highlight {
+  color: #f40303;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.highlight-text {
+  color: #f40303;
+  font-size: 1.2em;
+}
+
+/* 背景色付きのボックス */
+.highlight-box {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #fdb64b;
+}
+
+
+/* 補足などの文字サイズを少し小さくする */
+p {
+  font-size: 1.2em;
+}
+
+.large-text {
+  font-size: 1.5em;
+}
+
+/*----------------------------------
+  セクションレイアウト
+----------------------------------*/
+.section {
+  margin: 2em auto;
+  padding: 2em 1em;
+
+}
+
+/* セクション内の区切り線 */
+.divider {
+  margin: 1.5em auto;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.orange-title {
+  color: #FFA500;
+}
+
+/*----------------------------------
+  ユーティリティクラス
+----------------------------------*/
+.center {
+  text-align: center;
+}
+.note_mail {
+  font-size: 0.9em;
+  color:black;
+  border-bottom: #333 solid 1px;
+}
+
+.note{
+  font-size:1.1em;
+  color:#333;
+}
+
+/*----------------------------------
+  LINE QRコード画像
+----------------------------------*/
+.line-qrcode {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+
+/*----------------------------------
+  花の写真・SNSシェア部分
+----------------------------------*/
+.flower-section {
+  margin: 1.5em 1.5em;
+  border: 3px solid #ccc;
+  padding: 20px;
+}
+
+/* 花画像のラッパー（中央寄せ等） */
+.flower-img-wrap {
+  text-align: center;
+}
+.flower-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* SNSシェアアイコン */
+.sns-share-wrap {
+  margin: 1.5em 1.5em;  /* 花のセクションと同じマージン */
+  display: flex;
+  justify-content: flex-start;  /* 左寄せに変更 */
+  gap: 5px;
+}
+
+/*----------------------------------
+  フッター部分
+----------------------------------*/
+.footer-section {
+  margin-top: 3em;
+  border-top: 1px solid #ddd;
+  padding-top: 1em;
+  font-size: 0.9em;
+  background-color: #f5f5f5;
+}
+
+.footer-confirm, .footer-links {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+}
+
+.footer-confirm {
+  background-color: #fff;  /* 白背景 */
+  padding: 10px;          /* 内側の余白 */
+  border-radius: 5px;     /* 角を少し丸く */
+  display: inline-block;  /* テキストの幅に合わせる */
+}
+
+.footer-links a{
+  color: #333;  /* リンクの文字色を黒に */
+}
+
+.badge-verified {
+  color: green;
+  font-weight: bold;
+}
+.benchmark-logo {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+
